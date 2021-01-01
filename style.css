@@ -1,0 +1,123 @@
+body {
+    background: linear-gradient(to right, #5cf8f8, #40883a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 10px solid  rgb(92, 26, 26);
+}
+
+.field {
+    width: 20rem;
+    height: 20rem;
+    border: 1px solid  rgb(92, 26, 26);
+    position: relative;
+    margin: 0 auto;
+}
+
+.cell {
+    box-sizing: border-box;
+    width: 5rem;
+    height: 5rem;
+    border: 3px solid  rgb(221, 90, 90);
+    border-radius: 10px;
+    position: absolute;
+    font-size: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.options {
+    width: 320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.counts{
+    font-size: 2rem;
+}
+
+.buttons {
+    width: 320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background: #00F260;
+    font-size: 3rem;
+    outline: none;
+}
+
+#myBtn {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.modal, .moodal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+.modal-content, .moodal-content {
+    position: relative;
+    background-color: #c6e7be;
+    border: 5px solid #1f42a2;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+
+.close, .cloose {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus,
+.cloose:hover,
+.cloose:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.modal-body, 
+.moodal-body {padding: 2px 16px;}
+
+.modal-content-text, .moodal-content-text {
+    font-size: 2rem;
+}

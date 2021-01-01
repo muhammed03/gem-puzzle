@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="field"></div>
+        <div class="options">
+
+
+            <div class="counts">Move: 0</div>
+            <div class="timer">
+                <div id="display" style="font-size: 2rem;">
+                    00:00
+                </div>
+            </div>
+
+        </div>
+        <div class="buttons">
+            <button class="button" id="startStop" onclick="startStop()">Начать игру </button>
+        </div>
+        <button id="myBtn">Инструкция</button>
+    </div>
+    
+    
+
+    <div id="myMoodal" class="moodal">
+
+        
+        <div class="moodal-content">
+            <span class="cloose">&times;</span>
+            <p>Популярная головоломка "пятнашка" была придумана еще в конце 19 века. Классическое игровое поле
+                представляет собой матрицу 4х4 клеток, на котором по порядку (слева - направо и сверху - вниз)
+                располагаются цифры от 1 до 15. Последняя клетка – пустая. Клетки перемешиваются определенным образом, и
+                задача игрока состоит в том, чтобы восстановить их первоначальное правильное расположение.</p>
+            <img src="./assets/instruction.jpg" alt="instruction">
+        </div>
+
+    </div>
+
+    <audio class='audio' src="./click.mp3"></audio>
+
+
+    <div id="myModal" class="modal">
+
+
+        <div class="modal-content">
+            <div class="modal-body">
+                <span class="close">&times;</span>
+                <p class="modal-content-text"></p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="create.js"></script>
+
+</body>
+
+</html>
